@@ -218,9 +218,16 @@ p#last {
 }
 
 .attachment-large.wp-post-image {
-border: 1px solid 
-#E3E3E3;
-padding: 1px;
-width: auto !important;
-height: auto !important;
+	border: 1px solid 
+	#E3E3E3;
+	padding: 1px;
+	width: auto !important;
+	height: auto !important;
+}
+
+.attachment-thumbnail.wp-post-image {
+	float: left;
+	margin: 4px 10px 0 0;
+	border: 1px solid #E3E3E3;
+	padding: 1px;
 }
