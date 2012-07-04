@@ -1,0 +1,226 @@
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+body {
+	background-image: url('../img/seeds_back.png');
+}
+
+
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+#banner { }
+
+/* Fixed Topbar Navigation */
+body.top-navbar { padding-top: 60px; }
+body.admin-bar .navbar-fixed-top { top: 28px; }
+
+
+
+/* =============================================================================
+   Content
+   ========================================================================== */
+
+#content { }
+
+
+
+/* =============================================================================
+   Primary Content
+   ========================================================================== */
+
+#main { }
+
+
+
+/* =============================================================================
+   Sidebar
+   ========================================================================== */
+
+#sidebar { }
+
+
+
+/* =============================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry h2 a { text-decoration: none; }
+.hentry time { display: block; }
+.hentry p.byline { }
+.hentry footer { clear: both; }
+
+
+
+/* =============================================================================
+   Post Comments
+   ========================================================================== */
+
+#comments, #respond, #submit { clear: both; display: block; }
+ol.commentlist img.avatar { float: left; margin-right: 10px; }
+
+
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+
+#content-info {
+  -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #333;
+    border-color: #666;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: #E3E3E3;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+#content-info p small { font-size: 13px; }
+
+
+
+/* =============================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { margin: 0 20px 20px 0; float: left; }
+.alignright { margin: 0 0 20px 20px; float: right; }
+
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 979px) {
+  /* Fix top padding when using the responsive grid with the fixed topbar */
+  body.top-navbar {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+    #tagline {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) {
+    #tagline {
+        float: right;
+    }
+}
+
+
+/* =============================================================================
+   Custom Front Page
+   ========================================================================== */
+   
+.img-latest {
+	margin-bottom: 15px;
+}
+
+#front-footer .span12 {
+	margin-top: 60px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.container {
+    background: #fff;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #e3e3e3;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#banner .container {
+	background: none;
+	border: none;
+	margin-bottom: 20px;
+	margin-top: 0;
+	padding: 0;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007fff;
+}
+
+a:hover {
+    color: #666666;
+}
+
+#featured img {
+    padding-bottom: 10px;
+}
+
+#footer {
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #333;
+    border-color: #666;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: #E3E3E3;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+#footer p {
+    border-right: 1px dotted #e3e3e3;
+}
+
+p#last {
+    border-right: none;
+}
+
+#footer h4 {
+    margin-bottom: 10px;
+}
+
+.attachment-large.wp-post-image {
+border: 1px solid 
+#E3E3E3;
+padding: 1px;
+width: auto !important;
+height: auto !important;
+}
