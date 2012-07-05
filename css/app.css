@@ -132,7 +132,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 /* =============================================================================
    Custom Front Page
    ========================================================================== */
-   
+
 .img-latest {
 	margin-bottom: 15px;
 }
@@ -218,7 +218,7 @@ p#last {
 }
 
 .attachment-large.wp-post-image {
-	border: 1px solid 
+	border: 1px solid
 	#E3E3E3;
 	padding: 1px;
 	width: auto !important;
@@ -230,4 +230,18 @@ p#last {
 	margin: 4px 10px 0 0;
 	border: 1px solid #E3E3E3;
 	padding: 1px;
+}
+
+#trans-logo {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+
+}
+
+a#logo {
+  display: block;
+  position: relative;
 }
