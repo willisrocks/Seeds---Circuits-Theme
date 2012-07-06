@@ -36,21 +36,3 @@
 
   <?php roots_wrap_before(); ?>
   <div id="wrap" class="<?php echo WRAP_CLASSES; ?>" role="document">
-    <div class="row">
-      <div class="span6">
-        <a href="<?php bloginfo('url'); ?>" alt="<?php bloginfo('name'); ?>">
-          <div id="logo">
-            <object data='<?php echo get_template_directory_uri(); ?>/img/seeds_logo_opt.svg' >
-                <img src="<?php echo get_template_directory_uri(); ?>/img/seeds_logo_opt.png" />
-             </object>
-           </div>
-         </a>
-      </div>
-      <div class="span6">
-        <h3 id="tagline">
-          Tech news for students, by students
-        </h3>
-      </div>
-    </div><!-- end row 1 -->
-
-    <hr>
