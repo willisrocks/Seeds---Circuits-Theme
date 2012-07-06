@@ -39,16 +39,12 @@
     <div class="row">
       <div class="span6">
         <a href="<?php bloginfo('url'); ?>" alt="<?php bloginfo('name'); ?>">
-          <div id="logo">
-            <object data='<?php echo get_template_directory_uri(); ?>/img/seeds_logo_opt.svg' >
-                <img src="<?php echo get_template_directory_uri(); ?>/img/seeds_logo_opt.png" />
-             </object>
-           </div>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/seeds_logo_opt.png" />
          </a>
       </div>
       <div class="span6">
         <h3 id="tagline">
-          Tech news for students, by students
+          <?php echo get_bloginfo( 'description' ); ?>
         </h3>
       </div>
     </div><!-- end row 1 -->

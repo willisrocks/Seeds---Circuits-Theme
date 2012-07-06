@@ -4,6 +4,8 @@
 
 body {
 	background-image: url('../img/seeds_back.png');
+  font-size: 14px;
+  line-height: 21px;
 }
 
 
@@ -221,6 +223,7 @@ p#last {
 	border: 1px solid
 	#E3E3E3;
 	padding: 1px;
+  margin-top: 4px;
 	width: auto !important;
 	height: auto !important;
 }
@@ -232,3 +235,7 @@ p#last {
 	padding: 1px;
 }
 
+.seeds_latest {
+display: inline-block;
+width: inherit;
+}
