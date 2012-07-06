@@ -239,3 +239,19 @@ p#last {
 display: inline-block;
 width: inherit;
 }
+
+.byline.author.vcard {
+font-size: 12px;
+}
+
+.seeds_latest h3 a {
+color: #333;
+}
+
+.featured h2 a {
+color: #333;
+}
+
+.navbar .nav > li > a:hover {
+color: cyan;
+}
