@@ -255,3 +255,47 @@ color: #333;
 .navbar .nav > li > a:hover {
 color: cyan;
 }
+
+.latest-single > li {
+  list-style: none;
+  margin-bottom: 8px;
+  list-style-position: left;
+  margin-left: 0;
+  padding-left: 0;
+  display: inline-block;
+  position: relative;
+  border: 1px solid #e3e3e3;
+  margin-right: 4px;
+}
+
+ul.latest-single {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+img.latest-single {
+  z-index: -1;
+}
+
+.latest-overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #00ffff;
+  filter:alpha(opacity=80);
+  opacity:.8;
+  width: 97%;
+  padding: 2%;
+}
+
+.latest-overlay span a {
+  color: #333;
+  filter:alpha(opacity=100);
+  opacity:1;
+  font-weight: 800;
+}
+
+img {
+  width: auto !important;
+  height: auto !important;
+}
