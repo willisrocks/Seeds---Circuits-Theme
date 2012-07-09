@@ -52,7 +52,7 @@ body.admin-bar .navbar-fixed-top { top: 28px; }
 
 .hentry header { }
 .hentry h2 a { text-decoration: none; }
-.hentry time { display: block; }
+.hentry time { display: inline; }
 .hentry p.byline { }
 .hentry footer { clear: both; }
 
@@ -238,10 +238,11 @@ p#last {
 .seeds_latest {
 display: inline-block;
 width: inherit;
+position: relative;
 }
 
 .byline.author.vcard {
-font-size: 12px;
+  display: inline;
 }
 
 .seeds_latest h3 a {
@@ -262,15 +263,15 @@ color: cyan;
   list-style-position: left;
   margin-left: 0;
   padding-left: 0;
-  display: inline-block;
   position: relative;
   border: 1px solid #e3e3e3;
-  max-width: 100%;
+  max-width: 300px;
 }
 
 ul.latest-single {
   margin-left: 0;
   padding-left: 0;
+  margin-top: 18px;
 }
 
 img.latest-single {
@@ -281,7 +282,7 @@ img.latest-single {
   position: absolute;
   left: 0px;
   top: 0px;
-  background: #00ffff;
+  background: #333;
   filter:alpha(opacity=80);
   opacity:.8;
   width: 100%;
@@ -289,14 +290,21 @@ img.latest-single {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 
 .latest-overlay span a {
-  color: #333;
+  color: #e3e3e3;
   filter:alpha(opacity=100);
   opacity:1;
   font-weight: 800;
+}
+
+.latest-overlay span a:hover {
+  color: #00ffff;
+  filter:alpha(opacity=100);
+  opacity:1;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 img {
@@ -304,8 +312,20 @@ img {
   height: auto !important;
 }
 
-span.subtitle {
+.entry-meta {
+  margin: 6px 0 12px 0;
+  list-style-type: none;
+}
+
+.entry-meta li {
+  display: inline;
+  margin-right: 6px;
+}
+
+.seeds_latest li {
   display: block;
-  font-size: 18px;
-  color: #666;
+}
+
+.seeds_latest ul {
+  margin-top: 12px;
 }
