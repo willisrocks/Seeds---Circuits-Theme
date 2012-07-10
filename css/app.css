@@ -259,13 +259,19 @@ color: cyan;
 
 .latest-single > li {
   list-style: none;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   list-style-position: left;
   margin-left: 0;
   padding-left: 0;
   position: relative;
   border: 1px solid #e3e3e3;
   max-width: 300px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.attachment-medium.wp-post-image {
+  border-radius: 6px;
 }
 
 ul.latest-single {
@@ -290,6 +296,8 @@ img.latest-single {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0 3px 2px -2px #333;
 }
 
 .latest-overlay span a {
@@ -309,7 +317,7 @@ img.latest-single {
 
 img {
   width: auto !important;
-  height: auto !important;
+  /*height: auto !important;*/
 }
 
 .entry-meta {

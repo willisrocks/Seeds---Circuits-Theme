@@ -1,6 +1,6 @@
 <?php roots_loop_before(); ?>
 <?php $limit = get_option('posts_per_page'); ?>
-<?php query_posts('showposts=' . $limit . '&paged=' . $paged .'&cat=-4'); ?>
+<?php query_posts('showposts=' . $limit . '&paged=' . $paged .'&cat=-5'); ?>
 <?php if (have_posts()) : ?>
   <?php while (have_posts()) : the_post(); ?>
     <div class="seeds_latest">
