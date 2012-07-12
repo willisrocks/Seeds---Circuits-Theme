@@ -337,3 +337,55 @@ img {
 .seeds_latest ul {
   margin-top: 12px;
 }
+
+.entry-meta-container {
+  margin: 10px 0;
+}
+
+.entry-meta {
+  display: inline;
+}
+
+
+/* =============================================================================
+   Social
+   ========================================================================== */
+
+   .social-single {
+display: inline;
+float: right;
+margin-top: -3px;
+}
+
+#twitterbutton, #likebutton, #stumblebutton, #sharebutton, #linkedinshare {
+float: left;
+display: inline;
+}
+
+#likebutton {
+margin-top:0px;
+margin-left:-3px;
+}
+
+#sharebutton {
+margin-left:-46px;
+margin-top:-2px;
+margin-right: 5px;
+}
+
+#stumblebutton {
+margin-left: 20px;
+margin-top: 1px;
+}
+
+#linkedinshare {
+margin-left: 20px;
+margin-top: 1px;
+}
+
+#plusonebutton {
+margin-left: 0px;
+margin-top: 1px;
+display: inline;
+margin-right: -20px;
+}
