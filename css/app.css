@@ -82,17 +82,26 @@ ol.commentlist img.avatar { float: left; margin-right: 10px; }
     -webkit-border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: #333;
+    background: #e3e3e3;
+    border: 1px solid;
     border-color: #666;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    color: #E3E3E3;
+    color: #333;
     margin-bottom: 40px;
     margin-top: 0;
+
 }
 
 #content-info p small { font-size: 13px; }
 
+#content-info h3 {
+  text-shadow: #666 1px 1px 2px;
+}
+
+#content-info a {
+  color: #666;
+}
 
 
 /* =============================================================================
@@ -107,28 +116,6 @@ ol.commentlist img.avatar { float: left; margin-right: 10px; }
 figure.alignnone { margin-left: 0; margin-right: 0; }
 
 
-
-/* =============================================================================
-   Media Queries
-   ========================================================================== */
-
-@media (max-width: 979px) {
-  /* Fix top padding when using the responsive grid with the fixed topbar */
-  body.top-navbar {
-    padding-top: 0;
-  }
-}
-@media (min-width: 1200px) {
-    #tagline {
-        float: right;
-    }
-}
-
-@media (min-width: 768px) {
-    #tagline {
-        float: right;
-    }
-}
 
 
 /* =============================================================================
@@ -158,7 +145,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
     -webkit-border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border: 1px solid #e3e3e3;
+    border: 1px solid #666;
     margin-top: 20px;
     padding: 20px;
 }
@@ -207,14 +194,6 @@ a:hover {
     margin-top: 0;
 }
 
-#footer p {
-    border-right: 1px dotted #e3e3e3;
-}
-
-p#last {
-    border-right: none;
-}
-
 #footer h4 {
     margin-bottom: 10px;
 }
@@ -233,6 +212,7 @@ p#last {
 	margin: 4px 10px 0 0;
 	border: 1px solid #E3E3E3;
 	padding: 1px;
+  max-height: 80px;
 }
 
 .seeds_latest {
@@ -317,7 +297,7 @@ img.latest-single {
 
 img {
   width: auto !important;
-  /*height: auto !important;*/
+  height: auto !important;
 }
 
 .entry-meta {
@@ -346,7 +326,19 @@ img {
   display: inline;
 }
 
+#tagline {
+  text-shadow: #E3E3E3 1px 1px 1px;
+  margin-top: 12px;
+}
 
+#content-info section:first-child  {
+  margin-left: 0;
+}
+
+p.copy {
+  clear: both;
+  padding-top: 20px;
+}
 /* =============================================================================
    Social
    ========================================================================== */
@@ -388,4 +380,28 @@ margin-left: 0px;
 margin-top: 1px;
 display: inline;
 margin-right: -20px;
+}
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 979px) {
+  /* Fix top padding when using the responsive grid with the fixed topbar */
+  body.top-navbar {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+    #tagline {
+        float: right;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #tagline {
+        float: right;
+        margin: 0;
+    }
 }

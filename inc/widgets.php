@@ -13,7 +13,7 @@ function roots_widgets_init() {
   register_sidebar(array(
     'name' => __('Footer', 'roots'),
     'id' => 'sidebar-footer',
-    'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
+    'before_widget' => '<section id="%1$s" class="widget span3 %2$s"><div class="widget-inner">',
     'after_widget' => '</div></section>',
     'before_title' => '<h3>',
     'after_title' => '</h3>',
