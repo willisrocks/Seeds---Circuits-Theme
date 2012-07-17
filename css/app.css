@@ -216,9 +216,9 @@ a:hover {
 }
 
 .seeds_latest {
-display: inline-block;
-width: inherit;
-position: relative;
+  display: inline-block;
+  width: 100%;
+  position: relative;
 }
 
 .byline.author.vcard {
@@ -226,15 +226,17 @@ position: relative;
 }
 
 .seeds_latest h3 a {
-color: #333;
+  color: #333;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .featured h2 a {
-color: #333;
+  color: #333;
 }
 
 .navbar .nav > li > a:hover {
-color: cyan;
+  color: cyan;
 }
 
 .latest-single > li {
@@ -339,6 +341,15 @@ p.copy {
   clear: both;
   padding-top: 20px;
 }
+
+blockquote {
+  border-color: #00ffff;
+}
+
+blockquote p {
+  font-size: 18px;
+  font-weight: 600;
+}
 /* =============================================================================
    Social
    ========================================================================== */
@@ -405,3 +416,19 @@ margin-right: -20px;
         margin: 0;
     }
 }
+
+/*@media (max-width: 767px) {
+    .seeds_latest h3 a {
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media (max-width: 530px) {
+    .social-single {
+        display: block;
+        float: left;
+        margin: 10px 0;
+        width: 100%;
+    }
+}*/
