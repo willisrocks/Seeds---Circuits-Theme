@@ -39,3 +39,10 @@ function my_get_display_author_posts() {
 
     return $output;
 }
+
+add_filter('comment_reply_link', "my_comment_reply_link");
+function my_comment_reply_link ($link = null) {
+    return is_user_logged_in()
+        ? $link
+        : str_replace('comment-reply-link', 'comment-reply-link btn btn-inverse .btn-mini', $link);
+}

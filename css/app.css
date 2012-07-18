@@ -64,9 +64,49 @@ body.admin-bar .navbar-fixed-top { top: 28px; }
 
 #comments, #respond, #submit { clear: both; display: block; }
 ol.commentlist img.avatar { float: left; margin-right: 10px; }
+a.comment-reply-link {
+  color: #fff;
+}
 
+a.comment-reply-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
 
+/*.seeds-comment-reply {
+  float: right;
+}*/
 
+ol.commentlist {
+  margin-left: 0;
+}
+
+li.comment {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 6px;
+}
+
+ul.children .comment{
+  margin-top: 10px;
+  background: none;
+  border: none;
+}
+
+li.thread-odd {
+  background: #e3e3e3;
+}
+
+li.comment header {
+  font-size: 12px;
+}
+
+li.comment header a {
+  text-decoration: none;
+  color: #333;
+}
 /* =============================================================================
    Footer
    ========================================================================== */

@@ -20,7 +20,8 @@
         <?php comment_text() ?>
       </section>
 
-      <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
+      <!--<?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>-->
+      <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth'], 'before' => '<div class="btn btn-inverse btn-mini seeds-comment-reply">', 'after' => '</div>'))); ?>
 
     </article>
 <?php } ?>
