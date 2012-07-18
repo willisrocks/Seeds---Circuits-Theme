@@ -227,7 +227,7 @@ a:hover {
 
 .seeds_latest h3 a {
   color: #333;
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -358,6 +358,8 @@ blockquote p {
 display: inline;
 float: right;
 margin-top: -3px;
+width: 252px;
+margin-right: -24px;
 }
 
 #twitterbutton, #likebutton, #stumblebutton, #sharebutton, #linkedinshare {
@@ -367,7 +369,7 @@ display: inline;
 
 #likebutton {
 margin-top:0px;
-margin-left:-3px;
+margin-left:-38px;
 }
 
 #sharebutton {
@@ -387,10 +389,10 @@ margin-top: 1px;
 }
 
 #plusonebutton {
-margin-left: 0px;
+margin-left: -10px;
 margin-top: 1px;
 display: inline;
-margin-right: -20px;
+/* margin-right: -20px; */
 }
 
 /* =============================================================================
@@ -422,7 +424,7 @@ margin-right: -20px;
         margin-bottom: 10px;
     }
     
-}
+}*/
 
 @media (max-width: 530px) {
     .social-single {
@@ -431,4 +433,10 @@ margin-right: -20px;
         margin: 10px 0;
         width: 100%;
     }
-}*/
+}
+
+@media (max-width: 340px) {
+    .social-single {
+        display: none;
+    }
+}

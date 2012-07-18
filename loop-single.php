@@ -1,4 +1,7 @@
-<?php /* Start loop */ ?>
+<?php /* Start loop
+      Social Sharing buttons adapted from Kristi Hines
+      http://kikolani.com/social-sharing-buttons-in-single-post-templates.html
+ */ ?>
 <?php while (have_posts()) : the_post(); ?>
   <?php roots_post_before(); ?>
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -10,7 +13,8 @@
           <!-- Social Share Buttons -->
           <div class="social-single">
           <div id="twitterbutton"><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script><div> <a href="http://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink() ?>" data-counturl="<?php the_permalink() ?>" data-text="<?php the_title(); ?>" data-via="tesc_compcenter" data-related="tesc_compcenter">Tweet</a></div></div>
-          <div id="sharebutton" style="padding-top:1px;"><a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
+          <div id="likebutton"><iframe src="http://www.facebook.com/plugins/like.php?href=<?php echo rawurlencode(get_permalink()); ?>&layout=button_count&show_faces=false&width=100&action=like&font=verdana&colorscheme=light&height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe></div>
+          <!-- <div id="sharebutton" style="padding-top:1px;"><a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div> -->
           <div id="plusonebutton"><g:plusone size="medium"></g:plusone></div>
           </div><br /> <!-- End Social -->
         </div>
