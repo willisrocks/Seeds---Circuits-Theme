@@ -46,6 +46,7 @@
         <h3 id="tagline">
           <?php echo get_bloginfo( 'description' ); ?>
         </h3>
+        <?php include (TEMPLATEPATH . '/searchform.php'); ?>
       </div>
     </div><!-- end row 1 -->
 
