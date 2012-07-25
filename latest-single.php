@@ -7,7 +7,7 @@
     <li>
       <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
         <?php if ( has_post_thumbnail() ) {
-          the_post_thumbnail('medium');
+          the_post_thumbnail('latest-thumb');
           } else { ?>
           <img src="<?php echo get_template_directory_uri(); ?>/img/seeds_logo_placeholder.png" />
           <?php } ?>

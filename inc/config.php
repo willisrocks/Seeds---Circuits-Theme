@@ -9,7 +9,7 @@ add_theme_support('bootstrap-top-navbar');
 // Set the content width based on the theme's design and stylesheet
 if (!isset($content_width)) { $content_width = 940; }
 
-define('POST_EXCERPT_LENGTH',       70);
+define('POST_EXCERPT_LENGTH',       60);
 define('WRAP_CLASSES',              'container');
 define('CONTAINER_CLASSES',         'row');
 define('MAIN_CLASSES',              'span8');

@@ -23,7 +23,7 @@ function my_get_display_author_posts() {
     $output = '<ul class="latest-single">';
     foreach ( $authors_posts as $authors_post ) {
         if ( has_post_thumbnail( $authors_post->ID ) ) {
-          $authors_thumb = get_the_post_thumbnail( $authors_post->ID, 'medium' );
+          $authors_thumb = get_the_post_thumbnail( $authors_post->ID, 'latest-thumb' );
           } else {
           $authors_thumb = '<img src="' . get_template_directory_uri() . '/img/seeds_logo_placeholder.png" />';
           }

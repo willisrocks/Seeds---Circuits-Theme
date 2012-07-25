@@ -24,7 +24,7 @@
       </div>
       <footer>
         <?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
-        <?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>
+        <?php $tags = get_the_tags(); if ($tags) { ?><p class="seeds-tags"><?php the_tags('<i class="icon-tags"></i> <span class="seeds-tags-label">Tags:</span> <span class="label label-inverse"><i class="icon-tag icon-white"></i> ', '</span> <span class="label label-inverse"><i class="icon-tag icon-white"></i> ', '</span><br />'); ?></p><?php } ?>
       </footer>
       <?php comments_template(); ?>
       <?php roots_post_inside_after(); ?>

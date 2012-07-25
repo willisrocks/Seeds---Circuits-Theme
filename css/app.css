@@ -28,6 +28,9 @@ body.admin-bar .navbar-fixed-top { top: 28px; }
 
 #content { }
 
+.entry-content.entry-content-archive {
+margin-top: 18px;
+}
 
 /* =============================================================================
    Images
@@ -36,6 +39,7 @@ body.admin-bar .navbar-fixed-top { top: 28px; }
 img.size-large, img.size-medium {
   border: 1px solid #E3E3E3;
   padding: 2px;
+  box-sizing: border-box;
 }
 
 .attachment-large.wp-post-image {
@@ -55,6 +59,21 @@ img.size-large, img.size-medium {
   max-height: 80px;
 }
 
+.attachment-category-thumb.wp-post-image {
+float: left;
+margin: 0 18px 18px 0;
+border: 1px solid #E3E3E3;
+padding: 2px;
+}
+
+.wp-caption {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+img.wp-caption {
+  max-width: 100%;
+}
 /* =============================================================================
    Primary Content
    ========================================================================== */
@@ -81,7 +100,24 @@ img.size-large, img.size-medium {
 .hentry p.byline { }
 .hentry footer { clear: both; }
 
+p.seeds-tags {
+  font-size: 12px;
+  margin-bottom: 24px;
+}
 
+.seeds-tags a {
+  color: #e3e3e3;
+}
+
+.seeds-tags a:hover {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.seeds-tags-label {
+  font-size: 14px;
+  font-weight: bold;
+}
 
 /* =============================================================================
    Post Comments
@@ -159,10 +195,10 @@ li.comment header a {
    ========================================================================== */
 
    .page-header {
-    margin: 0 0 18px 0;
+    margin: 0 0 18px Footer;
    }
 /* =============================================================================
-   Footer
+   0
    ========================================================================== */
 
 #content-info {
@@ -332,12 +368,13 @@ a:hover {
   position: relative;
   border: 1px solid #e3e3e3;
   max-width: 300px;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  padding: 2px;
 }
 
-.attachment-medium.wp-post-image {
-  border-radius: 6px;
+.attachment-latest-thumb.wp-post-image {
+  /*border-radius: 6px;*/
 }
 
 ul.latest-single {
@@ -352,18 +389,28 @@ img.latest-single {
 
 .latest-overlay {
   position: absolute;
-  left: 0px;
-  top: 0px;
-  background: #333;
+  left: 2px;
+  bottom: 2px;
+  /*left: 0px;
+  top: 0px;*/
+  background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(1,1,1,1) 1%, rgba(51,51,51,0) 95%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(1%,rgba(1,1,1,1)), color-stop(95%,rgba(51,51,51,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(1,1,1,1) 1%,rgba(51,51,51,0) 95%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(1,1,1,1) 1%,rgba(51,51,51,0) 95%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(1,1,1,1) 1%,rgba(51,51,51,0) 95%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(1,1,1,1) 1%,rgba(51,51,51,0) 95%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00333333',GradientType=1 ); /* IE6-9 */
+
+  /*background: #333;
   filter:alpha(opacity=80);
-  opacity:.8;
+  opacity:.8;*/
   width: 100%;
   padding: 2%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 6px 6px 0 0;
-  box-shadow: 0 3px 2px -2px #333;
+  /*border-radius: 6px 6px 0 0;
+  box-shadow: 0 3px 2px -2px #333;*/
 }
 
 .latest-overlay span a {
@@ -484,6 +531,14 @@ margin-left: -10px;
 margin-top: 1px;
 display: inline;
 /* margin-right: -20px; */
+}
+
+/* =============================================================================
+   Archives
+   ========================================================================== */
+
+.pager a {
+  color: #333;
 }
 
 /* =============================================================================
