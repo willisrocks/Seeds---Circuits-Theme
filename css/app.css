@@ -74,6 +74,11 @@ padding: 2px;
 img.wp-caption {
   max-width: 100%;
 }
+
+.featured .attachment-large.wp-post-image {
+margin-bottom: 8px;
+}
+
 /* =============================================================================
    Primary Content
    ========================================================================== */
@@ -220,7 +225,7 @@ li.comment header a {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     color: #666;
-    margin-bottom: 40px;
+    margin-bottom: 4px;
     margin-top: 0;
 
 }
@@ -476,8 +481,7 @@ img {
 }
 
 p.copy {
-  clear: both;
-  padding-top: 20px;
+  margin-left: 34px;
 }
 
 blockquote {
@@ -492,45 +496,44 @@ blockquote p {
    Social
    ========================================================================== */
 
-   .social-single {
-display: inline;
-float: right;
-margin-top: -3px;
-width: 252px;
-margin-right: -24px;
+.social-single {
+  display: inline;
+  float: right;
+  margin-top: -3px;
+  width: 252px;
+  margin-right: -24px;
 }
 
 #twitterbutton, #likebutton, #stumblebutton, #sharebutton, #linkedinshare {
-float: left;
-display: inline;
+  float: left;
+  display: inline;
 }
 
 #likebutton {
-margin-top:0px;
-margin-left:-38px;
+  margin-top:0px;
+  margin-left:-38px;
 }
 
 #sharebutton {
-margin-left:-46px;
-margin-top:-2px;
-margin-right: 5px;
+  margin-left:-46px;
+  margin-top:-2px;
+  margin-right: 5px;
 }
 
 #stumblebutton {
-margin-left: 20px;
-margin-top: 1px;
+  margin-left: 20px;
+  margin-top: 1px;
 }
 
 #linkedinshare {
-margin-left: 20px;
-margin-top: 1px;
+  margin-left: 20px;
+  margin-top: 1px;
 }
 
 #plusonebutton {
-margin-left: -10px;
-margin-top: 1px;
-display: inline;
-/* margin-right: -20px; */
+  margin-left: -10px;
+  margin-top: 1px;
+  display: inline;
 }
 
 .seeds-social-icons { float: left; display: inline; width: auto; height: auto; margin: 6px 0 6px 0; padding: 0; }
@@ -548,33 +551,6 @@ display: inline;
 .seeds-social-icons .seeds-social li a:hover.seeds-google { background: url('../img/google_active.png') no-repeat scroll 0 0; }
 .seeds-social-icons .seeds-social li a:hover.seeds-rss { background: url('../img/rss_active.png') no-repeat scroll 0 0; }
 
-/*.seeds-facebook {
-  background-image: url('../img/facebook_dark.png');
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-}
-
-.seeds-twitter {
-  background-image: url('../img/twitter_dark.png');
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-}
-
-.seeds-google {
-  background-image: url('../img/google_dark.png');
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-}
-
-.seeds-rss {
-  background-image: url('../img/rss_dark.png');
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-}*/
 
 /* =============================================================================
    Archives

@@ -11,7 +11,9 @@
 				</a>
 			<?php endif; ?>
 			<h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-			<?php roots_entry_meta(); ?>
+			<div class="entry-meta-container">
+				<?php roots_entry_meta(); ?>
+			</div>
 			<?php the_excerpt(); ?>
 		</div>
 	<?php endwhile; ?>
