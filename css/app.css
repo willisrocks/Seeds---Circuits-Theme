@@ -533,6 +533,49 @@ display: inline;
 /* margin-right: -20px; */
 }
 
+.seeds-social-icons { float: left; display: inline; width: auto; height: auto; margin: 6px 0 6px 0; padding: 0; }
+.seeds-social-icons .seeds-social { list-style: none; margin: 0; padding: 0; }
+.seeds-social-icons .seeds-social li { float: left; margin-right: 5px; width: 32px; height: 32px; }
+.seeds-social-icons .seeds-social li.seeds-social-last { margin-right: 0; }
+.seeds-social-icons .seeds-social li a { display: block; outline: none; width: 32px; height: 32px; text-indent: -9999px; }
+.seeds-social-icons .seeds-social li a.seeds-facebook { background: url('../img/facebook_dark.png') no-repeat scroll 0 0}
+.seeds-social-icons .seeds-social li a.seeds-twitter { background: url('../img/twitter_dark.png') no-repeat scroll 0 0; }
+.seeds-social-icons .seeds-social li a.seeds-google { background: url('../img/google_dark.png') no-repeat scroll 0 0; }
+.seeds-social-icons .seeds-social li a.seeds-rss { background: url('../img/rss_dark.png') no-repeat scroll 0 0; }
+
+.seeds-social-icons .seeds-social li a:hover.seeds-facebook { background: url('../img/facebook_active.png') no-repeat scroll 0 0}
+.seeds-social-icons .seeds-social li a:hover.seeds-twitter { background: url('../img/twitter_active.png') no-repeat scroll 0 0; }
+.seeds-social-icons .seeds-social li a:hover.seeds-google { background: url('../img/google_active.png') no-repeat scroll 0 0; }
+.seeds-social-icons .seeds-social li a:hover.seeds-rss { background: url('../img/rss_active.png') no-repeat scroll 0 0; }
+
+/*.seeds-facebook {
+  background-image: url('../img/facebook_dark.png');
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.seeds-twitter {
+  background-image: url('../img/twitter_dark.png');
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.seeds-google {
+  background-image: url('../img/google_dark.png');
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.seeds-rss {
+  background-image: url('../img/rss_dark.png');
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}*/
+
 /* =============================================================================
    Archives
    ========================================================================== */
