@@ -14,7 +14,7 @@
       <?php roots_sidebar_inside_before(); ?>
       <?php include (TEMPLATEPATH . '/latest-single.php'); ?>
       <?php wp_reset_postdata(); // reset the query ?>
-      <h3>More by Author</h3>
+      <!--<h3>More by Author</h3>-->
       <?php echo my_get_display_author_posts(); ?>
       <?php roots_sidebar_inside_after(); ?>
       </aside><!-- /#sidebar -->

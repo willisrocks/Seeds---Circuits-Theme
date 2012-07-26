@@ -17,10 +17,12 @@ function get_category_id($cat_name){
 function my_get_display_author_posts() {
     global $authordata, $post;
 
-    $authors_posts = get_posts( array( 'author' => $authordata->ID, 'showposts' => '2', 'post__not_in' => array( $post->ID ) ) );
-    
+    $authors_posts = get_posts( array( 'author' => $authordata->ID, 'showposts' => '3', 'post__not_in' => array( $post->ID ) ) );
+    if ( count ($authors_posts) > 1 ) {
+        $output = '<h3>More by Author</h3>';
+    }
 
-    $output = '<ul class="latest-single">';
+    $output .= '<ul class="latest-single">';
     foreach ( $authors_posts as $authors_post ) {
         if ( has_post_thumbnail( $authors_post->ID ) ) {
           $authors_thumb = get_the_post_thumbnail( $authors_post->ID, 'latest-thumb' );

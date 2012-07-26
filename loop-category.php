@@ -29,7 +29,7 @@
         <?php } ?>
       </div>
       <footer>
-        <?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>
+        <!--<?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>-->
         <hr>
       </footer>
     <?php roots_post_inside_after(); ?>
