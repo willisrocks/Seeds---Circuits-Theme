@@ -7,7 +7,12 @@
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
     <?php roots_post_inside_before(); ?>
       <header>
-        <h1 class="entry-title"><?php the_title(); ?></h1>
+        <hgroup>
+          <h1 class="entry-title"><?php the_title(); ?></h1>
+          <h2 class="subheading">
+            <?php $key="subtitle"; echo get_post_meta($post->ID, $key, true); ?> <!-- Get subheading from custom field -->
+          </h2>
+        </hgroup>
         <div class="entry-meta-container">
           <?php roots_entry_meta(); ?>
           <!-- Social Share Buttons -->
