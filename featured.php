@@ -1,4 +1,4 @@
-<!-- That would be the start of the Featured post   -->
+<!-- Featured post. Pulls latest post from featured category and displays it prominently on the front page.   -->
 
 <div class="featured">
 	<?php $my_query = new WP_Query('category_name=featured&showposts=1');
@@ -18,5 +18,3 @@
 		</div>
 	<?php endwhile; ?>
 </div>
-
-<!-- That would be the end of the Featured post   -->

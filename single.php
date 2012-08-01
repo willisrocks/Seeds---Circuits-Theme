@@ -6,15 +6,15 @@
         <?php roots_loop_before(); ?>
         <?php get_template_part('loop', 'single'); ?>
         <?php roots_loop_after(); ?>
-        
       </div><!-- /#main -->
     <?php roots_main_after(); ?>
     <?php roots_sidebar_before(); ?>
       <aside id="sidebar" class="<?php echo SIDEBAR_CLASSES; ?>" role="complementary">
       <?php roots_sidebar_inside_before(); ?>
+      <!-- Include latest posts -->
       <?php include (TEMPLATEPATH . '/latest-single.php'); ?>
       <?php wp_reset_postdata(); // reset the query ?>
-      <!--<h3>More by Author</h3>-->
+      <!-- Include more by author posts -->
       <?php echo my_get_display_author_posts(); ?>
       <?php roots_sidebar_inside_after(); ?>
       </aside><!-- /#sidebar -->

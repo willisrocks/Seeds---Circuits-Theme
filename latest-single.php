@@ -1,3 +1,7 @@
+<!--********************* latest-single.php **************************
+*********** Display latest posts on full post pages ******************
+*******************************************************************-->
+
 <h3>Latest Posts</h3>
 <ul class="latest-single">
   <?php
