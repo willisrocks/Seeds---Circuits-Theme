@@ -14,7 +14,7 @@
       <?php roots_sidebar_inside_before(); ?>
       <h4>Latest Posts</h4>
         <!-- Include latest posts code (latest.php) -->
-        <?php include (TEMPLATEPATH . '/latest.php'); ?
+        <?php include (TEMPLATEPATH . '/latest.php'); ?>
       <?php roots_sidebar_inside_after(); ?>
       </aside><!-- /#sidebar -->
     <?php roots_sidebar_after(); ?>
