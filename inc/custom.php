@@ -1,13 +1,12 @@
 <?php
-
+// *******************************************************************************
+//
 // Custom functions
-// function seeds_logo() {
-//     echo '<object data='img/seeds_logo_opt.svg' >
-//             <img src='img/seeds_logo_opt.png' />
-//         </object>';
-// }
+// Add all custom functions here
+//
+// *******************************************************************************
 
-// add_action('logo','seeds_logo');
+// More by author. Add custom more by author links in sidebar on single post pages.
 
 function get_category_id($cat_name){
     $term = get_term_by('name', $cat_name, 'category');
@@ -42,9 +41,29 @@ function my_get_display_author_posts() {
     return $output;
 }
 
+// Custom button classes for comment links
+
 add_filter('comment_reply_link', "my_comment_reply_link");
 function my_comment_reply_link ($link = null) {
     return is_user_logged_in()
         ? $link
         : str_replace('comment-reply-link', 'comment-reply-link btn btn-inverse .btn-mini', $link);
+}
+
+// Custom help text widget on dashboard
+
+add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
+ 
+function my_custom_dashboard_widgets() {
+global $wp_meta_boxes;
+
+wp_add_dashboard_widget('custom_help_widget', 'Editing Seeds and Circuits', 'custom_dashboard_help');
+}
+
+function custom_dashboard_help() {
+echo '<ul>';
+echo '<li>Image Size: 770px wide by 385px tall</li>';
+echo '<li>Do not forget to enter custom subtitles where appropriate</li>';
+echo '<li>If a title is too long, you can set an optional short title</li>';
+echo '</ul>';
 }
