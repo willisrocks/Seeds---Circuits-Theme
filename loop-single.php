@@ -10,7 +10,7 @@
         <hgroup>
           <h1 class="entry-title"><?php the_title(); ?></h1>
           <h2 class="subheading">
-            <?php $key="subtitle"; echo get_post_meta($post->ID, $key, true); ?> <!-- Get subheading from custom field -->
+            <?php $key="my_subtitle"; echo get_post_meta($post->ID, $key, true); ?> <!-- Get subheading from custom field -->
           </h2>
         </hgroup>
         <div class="entry-meta-container">

@@ -13,11 +13,14 @@
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php roots_post_inside_before(); ?>
       <header>
-        <?php if ( has_post_thumbnail()) : ?>
-          <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-            <?php the_post_thumbnail('category-thumb'); ?>
-          </a>
-        <?php endif; ?>
+        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+        <?php if ( has_post_thumbnail() ) {
+          the_post_thumbnail('category-thumb');
+          } else { ?>
+          <img width="300" height="150" src="<?php echo get_template_directory_uri(); ?>/img/seeds_logo_placeholder_cat.png" class="attachment-category-thumb wp-post-image" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
+          <?php } ?>
+        </a>
+      
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         <?php roots_entry_meta(); ?>
       </header>
