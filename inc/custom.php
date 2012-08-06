@@ -69,6 +69,7 @@ echo '</ul>';
 }
 
 // Custom meta boxes for subtitles and short titles
+// Adapted from Christopher Davis' Meta Box Example at wp.tutsplus.com
 
 add_action( 'add_meta_boxes', 'cd_meta_box_add' );
 function cd_meta_box_add()
