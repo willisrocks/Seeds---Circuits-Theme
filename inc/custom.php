@@ -17,7 +17,7 @@ function my_get_display_author_posts() {
     global $authordata, $post;
 
     $authors_posts = get_posts( array( 'author' => $authordata->ID, 'showposts' => '3', 'post__not_in' => array( $post->ID ) ) );
-    if ( count ($authors_posts) > 1 ) {
+    if ( count ($authors_posts) > 0 ) {
         $output = '<h3>More by Author</h3>';
     }
 
