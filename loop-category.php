@@ -20,8 +20,13 @@
           <img width="300" height="150" src="<?php echo get_template_directory_uri(); ?>/img/seeds_logo_placeholder_cat.png" class="attachment-category-thumb wp-post-image" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
           <?php } ?>
         </a>
-      
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+        <?php if (get_post_meta($post->ID, "my_shorttitle", true)) { ?> <!--Check for short title, else display regular title-->
+          <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo get_post_meta($post->ID, "my_shorttitle", true); ?></a></h2>
+        <?php } else { ?>
+          <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+        <?php } ?>
+
         <?php roots_entry_meta(); ?>
       </header>
       <div class="entry-content entry-content-archive">
