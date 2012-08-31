@@ -44,7 +44,7 @@
   <?php roots_post_after(); ?>
 <?php endwhile; /* End loop */ ?>
 
-<?php /* Display navigation to next/previous pages when applicable */ ?>
+<?php /* Display navigation to next/previous pages when applicable, Chris */ ?>
 <?php if ($wp_query->max_num_pages > 1) { ?>
   <nav id="post-nav" class="pager">
     <div class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></div>
